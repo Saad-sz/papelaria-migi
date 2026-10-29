@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f0e6;
+    color: #39372f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Cartão principal */
+
+#geral {
+    background-color: #fffdf8;
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid #e8dfcf;
+    box-shadow: 0 8px 25px rgba(93, 77, 49, 0.08);
+}
+
+/* Link de voltar */
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #89816f;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #58745b;
+}
+
+/* Título */
+
+h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #394b3b;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+/* Rótulos */
+
+label {
+    grid-column: 1 / -1;
+    font-size: 13px;
+    font-weight: 800;
+    color: #625c4f;
+    margin-bottom: -5px;
+}
+
+/* Campos */
+
+input[type="text"],
+input[type="number"],
+input[type="decimal"] {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    margin-bottom: 10px;
+    border: 1px solid #e3dac9;
+    border-radius: 8px;
+    background-color: #fffefa;
+    color: #39372f;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.25s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="decimal"]:focus {
+    border-color: #8ba28a;
+    box-shadow: 0 0 0 3px rgba(139, 162, 138, 0.15);
+}
+
+input::placeholder {
+    color: #b3aa99;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+/* Estilo geral dos botões */
+
+input[type="submit"],
+button {
+    min-height: 43px;
+    padding: 11px 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* CADASTRAR — botão principal */
+
+input[type="submit"] {
+    grid-column: 1 / -1;
+    min-height: 52px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: #58745b;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    box-shadow: 0 4px 0 #3d5840;
+}
+
+input[type="submit"]:hover {
+    background-color: #49664c;
+    box-shadow: 0 6px 0 #3d5840;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #3d5840;
+}
+
+/* LIMPAR */
+
+button[type="reset"] {
+    background-color: #f3eadb;
+    color: #75664e;
+    border-color: #e7dac5;
+}
+
+button[type="reset"]:hover {
+    background-color: #e9ddc9;
+    transform: translateY(-2px);
+}
+
+/* VOLTAR */
+
+button[name="voltar"] {
+    background-color: #fffdf8;
+    color: #777064;
+    border-color: #ded6c7;
+}
+
+button[name="voltar"]:hover {
+    background-color: #f0eadf;
+    transform: translateY(-2px);
+}
+
+/* AVANÇAR */
+
+button[name="avancar"] {
+    background-color: #e4eddf;
+    color: #476448;
+    border-color: #d3e0cc;
+}
+
+button[name="avancar"]:hover {
+    background-color: #d4e3ce;
+    transform: translateY(-2px);
+}
+
+/* EXCLUIR */
+
+button[name="excluir"] {
+    background-color: #f8e8e3;
+    color: #a65348;
+    border-color: #efd4cd;
+}
+
+button[name="excluir"]:hover {
+    background-color: #f1d7d0;
+    transform: translateY(-2px);
+}
+
+/* ALTERAR */
+
+button[name="alterar"] {
+    background-color: #f4e8bd;
+    color: #80672e;
+    border-color: #e9d9a6;
+}
+
+button[name="alterar"]:hover {
+    background-color: #ebdba4;
+    transform: translateY(-2px);
+}
+
+/* CONSULTAR */
+
+button[name="consultar"] {
+    background-color: #e8e5f2;
+    color: #62577f;
+    border-color: #d8d2e8;
+}
+
+button[name="consultar"]:hover {
+    background-color: #dad5eb;
+    transform: translateY(-2px);
+}
+
+/* Acessibilidade: foco pelo teclado */
+
+input[type="submit"]:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #b7a779;
+    outline-offset: 3px;
+}
+
+/* Responsividade */
+
+@media (max-width: 480px) {
+    #geral {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}

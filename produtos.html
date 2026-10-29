@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="produtos.css">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+</head>
+<body>
+    <div id="geral">
+        <a href="index.html"> ⬅ Voltar a página inicial</a>
+        <h1>Cadastro de produtos</h1>
+        <form action="produtos.php" method="post">
+
+            <input type="hidden" name="idproduto">
+
+            <label for="nomep">Nome do produto</label>
+            <input type="text" name="nomep" id="txtnomep" placeholder="Ex.: Lápis">
+
+            <label for="fabricante">Fabricante</label>
+            <input type="text" name="fabricante" id="txtfabricante" placeholder="Ex.: Fabercastel">
+
+            <label for="preco">Preço</label>
+            <input type="decimal" name="preco" id="txtpreco" placeholder="Ex.: 2">
+
+            <label for="estoque">Quantidade no estoque</label>
+            <input type="number" name="estoque" id="txtestoque" placeholder="Ex.: 100">
+
+            <input type="submit" name="submit" value="Registrar">
+            <button type="submit" name="voltar">Voltar</button>
+            <button type="submit" name="avancar">Avançar</button>
+            <button type="reset">Limpar</button>
+            <button type="submit" name="excluir">Excluir</button>
+            <button type="submit" name="alterar">Alterar</button>
+            <button type="submit" name="consultar">Consultar</button>
+
+            <input type="hidden" name="idconsulta">
+        </form>
+    </div>
+</body>
+</html>

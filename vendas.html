@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de vendas</title>
+</head>
+<body>
+    <div id="geral">
+    <a href="index.html"> ⬅ Voltar a página inicial</a>
+        <h1>Registro de Vendas</h1>
+            <form method="post" action="vendas.php">
+
+                <input type="hidden" name="idvenda">
+
+                <label for="data">Data da Venda</label>
+                <input type="date" id="txtdata" name="data_venda">
+        
+                <label for="nomec">Nome do Cliente</label>
+                <input type="text" id="txtnomec" name="nome_cliente" placeholder="Informe o nome do cliente">
+
+                <label for="produto">Produto Vendido</label>
+                <input type="text" id="txtproduto" name="produto" placeholder="Informe o produto vendido">
+
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="txtquantidade" name="quantidade" placeholder="Informe a quantidade">
+
+                <label for="valor">Valor Unitário</label>
+                <input type="decimal" id="txtvalor" name="valor" placeholder="Informe o valor unitário">
+
+                <input type="submit" name="submit" value="Registrar">
+                <button type="submit" name="voltar">Voltar</button>
+                <button type="submit" name="avancar">Avançar</button>
+                <button type="reset">Limpar</button>
+                <button type="submit" name="excluir">Excluir</button>
+                <button type="submit" name="alterar">Alterar</button>
+                <button type="submit" name="consultar">Consultar</button>
+
+                <input type="hidden" name="idconsulta">
+        
+            </form>
+    </div>
+</body>
+</html>

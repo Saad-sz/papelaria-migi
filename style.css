@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f0e6;
+    color: #39372f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Cartão principal */
+
+#geral {
+    background-color: #fffdf8;
+    width: 100%;
+    max-width: 750px;
+    padding: 55px 50px 25px;
+    border-radius: 16px;
+    border: 1px solid #e8dfcf;
+    box-shadow: 0 8px 25px rgba(93, 77, 49, 0.08);
+    text-align: center;
+}
+
+/* Título principal */
+
+h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #394b3b;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+}
+
+/* Pequeno detalhe decorativo abaixo do título */
+
+h1::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background-color: #b9c9a9;
+    border-radius: 10px;
+    margin: 15px auto 25px;
+}
+
+/* Texto de boas-vindas */
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #797263;
+    margin-bottom: 35px;
+}
+
+/* Área dos botões */
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 460px;
+    margin: 0 auto 45px;
+}
+
+/* Links */
+
+#botoes a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Botões de navegação */
+
+.btn1,
+.btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+    padding: 0 25px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.25s ease;
+}
+
+/* Cadastro de vendas */
+
+.btn1 {
+    background-color: #58745b;
+    color: #ffffff;
+    border: 1px solid #58745b;
+    box-shadow: 0 4px 0 #3d5840;
+}
+
+.btn1 p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.btn1::after {
+    content: "↗";
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.btn1:hover {
+    background-color: #49664c;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #3d5840;
+}
+
+/* Cadastro de produtos */
+
+.btn2 {
+    background-color: #e4eddf;
+    color: #476448;
+    border: 1px solid #d3e0cc;
+    box-shadow: 0 4px 0 #c4d4bc;
+}
+
+.btn2 p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.btn2::after {
+    content: "↗";
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    background-color: #d4e3ce;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #c4d4bc;
+}
+
+/* Efeito ao clicar */
+
+.btn1:active,
+.btn2:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 rgba(57, 75, 59, 0.3);
+}
+
+/* Rodapé */
+
+footer {
+    border-top: 1px solid #eee5d6;
+    padding-top: 20px;
+    color: #a09887;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Responsividade para celulares */
+
+@media (max-width: 480px) {
+    #geral {
+        padding: 40px 22px 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .btn1,
+    .btn2 {
+        min-height: 65px;
+        padding: 0 18px;
+    }
+
+    .btn1 p,
+    .btn2 p {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+}
